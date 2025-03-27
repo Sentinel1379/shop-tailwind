@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+
+@theme {
+    --font-roboto: "Roboto", sans-serif;
+    --breakpoint-*: initial;
+    --breakpoint-sm: 570px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+    --color-gray-violet-700: #3c3840;
+    --color-gray-violet-600: #39333c;
+    --color-gray-violet-500: #616061;
+    --color-gray-violet-200: #9f9ca0;
+    --color-gray-violet-50: #bbb9bb;
+    --color-gray-violet-20: #fbf8fd;
+    --color-gray-violet-10: #faf8fc;
+    --color-violet-500: #7c19a1;
+    --color-gray-red-100: #5f5757;
+    --color-gray-red-70: #bcb2b2;
+    --color-gray-red-50: #998080;
+    --color-gray-red-30: #958b8b;
+    --color-purple-red: #990e35;
+
+
+}
+
+@layer base {
+    body {
+        /* font-family: var(--font-roboto); */
+        @apply font-roboto;
+    }
+}
+
+@layer components {
+    .header-btn {
+        @apply flex justify-center items-center w-[170px] h-[60px] font-medium rounded-sm transition duration-300;
+    }
+}
